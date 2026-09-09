@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>第17回 合計年齢別シニアテニス東海大会 資料まとめ</title>
+<meta name="description" content="第17回 合計年齢別シニアテニス東海大会（2026年10月1日・四日市ドーム）の実施要項・運営事項・会場案内などの資料一覧">
+<style>
+  :root{
+    --green:#1f7a4d;
+    --green-dark:#155c39;
+    --ink:#22262b;
+    --ink-soft:#5a6169;
+    --line:#dfe3e0;
+    --bg:#f6f7f4;
+    --card:#ffffff;
+    --accent-bg:#eef6f1;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","Meiryo",system-ui,sans-serif;
+    font-size:17px;
+    line-height:1.8;
+  }
+  .wrap{max-width:820px;margin:0 auto;padding:0 16px 56px;}
+
+  /* ヘッダー */
+  header{
+    background:var(--green);
+    color:#fff;
+    padding:28px 16px 24px;
+  }
+  header .inner{max-width:820px;margin:0 auto;}
+  .kicker{
+    font-size:14px;letter-spacing:.08em;opacity:.9;margin:0 0 6px;
+  }
+  h1{
+    font-size:26px;line-height:1.45;margin:0 0 14px;font-weight:700;
+  }
+  .head-facts{
+    display:flex;flex-wrap:wrap;gap:8px 10px;margin:0;padding:0;list-style:none;
+  }
+  .head-facts li{
+    background:rgba(255,255,255,.16);
+    border-radius:999px;
+    padding:5px 14px;
+    font-size:15px;
+  }
+
+  /* 見出し */
+  h2{
+    font-size:20px;margin:40px 0 14px;padding-left:12px;
+    border-left:5px solid var(--green);line-height:1.5;
+  }
+  .lead{margin:20px 0 0;color:var(--ink-soft);font-size:16px;}
+
+  /* 概要テーブル */
+  .facts{
+    background:var(--card);border:1px solid var(--line);border-radius:12px;
+    overflow:hidden;
+  }
+  .facts dl{margin:0;}
+  .facts .row{
+    display:flex;flex-wrap:wrap;border-top:1px solid var(--line);
+  }
+  .facts .row:first-child{border-top:none;}
+  .facts dt{
+    flex:0 0 130px;background:var(--accent-bg);color:var(--green-dark);
+    font-weight:700;padding:12px 14px;font-size:16px;
+  }
+  .facts dd{flex:1 1 240px;margin:0;padding:12px 14px;}
+  @media (max-width:520px){
+    .facts dt{flex:1 1 100%;padding:8px 14px 2px;background:transparent;}
+    .facts dd{flex:1 1 100%;padding:0 14px 12px;}
+  }
+
+  /* 資料カード */
+  .cards{display:grid;gap:14px;grid-template-columns:1fr;}
+  @media (min-width:660px){ .cards{grid-template-columns:1fr 1fr;} }
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:18px 18px 16px;display:flex;flex-direction:column;
+  }
+  .tag{
+    display:inline-block;font-size:13px;font-weight:700;letter-spacing:.04em;
+    color:var(--green-dark);background:var(--accent-bg);
+    border-radius:6px;padding:3px 9px;margin-bottom:10px;align-self:flex-start;
+  }
+  .card h3{font-size:18px;margin:0 0 8px;line-height:1.5;}
+  .card p{margin:0 0 16px;font-size:15.5px;color:var(--ink-soft);line-height:1.75;}
+  .card .btn{margin-top:auto;}
+  .btn{
+    display:block;text-align:center;text-decoration:none;
+    background:var(--green);color:#fff;font-weight:700;font-size:16px;
+    padding:13px 16px;border-radius:8px;min-height:48px;
+  }
+  .btn:hover{background:var(--green-dark);}
+  .btn.sub{background:#fff;color:var(--green-dark);border:2px solid var(--green);}
+  .btn.sub:hover{background:var(--accent-bg);}
+
+  /* タイムライン */
+  .timeline{list-style:none;margin:0;padding:0;background:var(--card);
+    border:1px solid var(--line);border-radius:12px;}
+  .timeline li{display:flex;gap:14px;padding:12px 16px;border-top:1px solid var(--line);}
+  .timeline li:first-child{border-top:none;}
+  .timeline .t{flex:0 0 92px;font-weight:700;color:var(--green-dark);font-variant-numeric:tabular-nums;}
+  .timeline .d{flex:1;}
+
+  /* 対戦表 */
+  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+  table{border-collapse:collapse;width:100%;min-width:520px;background:var(--card);
+    border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:16px;}
+  th,td{padding:12px 14px;text-align:left;border-top:1px solid var(--line);}
+  thead th{background:var(--accent-bg);color:var(--green-dark);border-top:none;}
+  tbody tr.mine td{background:#fffbe9;}
+  .mark{font-weight:700;}
+
+  /* 昼食セクション */
+  .lunch{
+    background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:18px 20px 20px;
+  }
+  .lunch p{margin:0 0 12px;}
+  .lunch p:last-child{margin-bottom:0;}
+  .lunch-lead{font-weight:700;font-size:17.5px;}
+  .lunch-item{
+    background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:16px;margin-bottom:14px;display:flex;gap:18px;align-items:flex-start;
+  }
+  .lunch-item img{
+    /* 元画像はスマホ画面の縦長スクリーンショットのため、お弁当の写真部分だけを切り出して表示しています */
+    flex:0 0 240px;width:240px;aspect-ratio:16/9;object-fit:cover;object-position:50% 34%;
+    border-radius:8px;border:1px solid var(--line);display:block;
+  }
+  .lunch-item-body{flex:1 1 260px;}
+  .lunch-item h3{margin:2px 0 8px;font-size:18px;}
+  .lunch-item p{margin:0 0 10px;font-size:15.5px;color:var(--ink-soft);}
+  .lunch-item p:last-child{margin-bottom:0;}
+  @media (max-width:560px){
+    .lunch-item{flex-direction:column;}
+    .lunch-item img{flex:1 1 auto;width:100%;max-width:320px;margin:0 auto;}
+  }
+  .lunch .btn{display:inline-block;padding:12px 22px;}
+  .facts-inline{margin:0 0 12px;border-top:1px solid var(--line);}
+  .facts-inline .row{display:flex;flex-wrap:wrap;border-bottom:1px solid var(--line);}
+  .facts-inline dt{flex:0 0 120px;font-weight:700;color:var(--green-dark);padding:10px 0;}
+  .facts-inline dd{flex:1 1 220px;margin:0;padding:10px 0;}
+  @media (max-width:520px){
+    .facts-inline dt{flex:1 1 100%;padding:10px 0 0;}
+    .facts-inline dd{flex:1 1 100%;padding:0 0 10px;}
+  }
+
+  /* 注意ボックス */
+  .note{
+    background:#fff8ec;border:1px solid #f0dcb4;border-left:5px solid #e0a33a;
+    border-radius:10px;padding:16px 18px;
+  }
+  .note h3{margin:0 0 8px;font-size:17px;}
+  .note ul{margin:0;padding-left:1.2em;}
+  .note li{margin:4px 0;}
+
+  footer{
+    margin-top:44px;padding-top:18px;border-top:1px solid var(--line);
+    color:var(--ink-soft);font-size:14px;line-height:1.8;
+  }
+  a{color:var(--green-dark);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <p class="kicker">日本シニアテニス連盟・東海地区</p>
+    <h1>第17回 合計年齢別シニアテニス東海大会<br>資料まとめ</h1>
+    <ul class="head-facts">
+      <li>2026年10月1日（木）</li>
+      <li>四日市ドーム</li>
+      <li>4県対抗団体戦</li>
+    </ul>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <p class="lead">大会に関する配布資料をこのページにまとめました。各カードのボタンから、いつでもPDF・画像をご覧いただけます（ダウンロードも可能です）。</p>
+
+  <h2>大会の概要</h2>
+  <div class="facts">
+    <dl>
+      <div class="row"><dt>日時</dt><dd>2026年10月1日（木）　練習 9:20〜9:45 ／ 監督会議 9:30 ／ 試合開始 10:00 ／ 終了 16:00 予定</dd></div>
+      <div class="row"><dt>会場</dt><dd>四日市ドーム（砂入り人工芝・屋内12面）<br>三重県四日市市大字羽津甲5169　TEL 059-330-3131</dd></div>
+      <div class="row"><dt>主催・主管</dt><dd>日本シニアテニス連盟・東海地区三重県部会（後援：東海地区各県部会）</dd></div>
+      <div class="row"><dt>試合方法</dt><dd>4県対抗団体戦（ラウンドロビン方式）／全試合6ゲーム先取・ノーアドバンテージ・セルフジャッジ</dd></div>
+      <div class="row"><dt>チーム編成</dt><dd>男子ダブルス 120・135・145・155歳以上／女子ダブルス 100・125・135・145歳以上（各種目 No.1・No.2）<br>※年齢は本年12月31日現在</dd></div>
+      <div class="row"><dt>使用球</dt><dd>ヨネックス TOUR PLATINUM</dd></div>
+      <div class="row"><dt>表彰</dt><dd>優勝・準優勝に賞状、全チームに賞品</dd></div>
+    </dl>
+  </div>
+
+  <h2>当日の流れ</h2>
+  <ul class="timeline">
+    <li><span class="t">8:50</span><span class="d">四日市ドーム開館・コート設営（ご協力いただける方はお願いします）</span></li>
+    <li><span class="t">9:20〜9:45</span><span class="d">練習（愛知県は No.10〜12 コート）</span></li>
+    <li><span class="t">9:30〜9:45</span><span class="d">監督会議（待機1スペース）</span></li>
+    <li><span class="t">9:50</span><span class="d">開会式（No.2コート）／参加者全員の写真撮影</span></li>
+    <li><span class="t">10:00</span><span class="d">第1試合開始</span></li>
+    <li><span class="t">12:00</span><span class="d">第2試合（対戦相手との挨拶）</span></li>
+    <li><span class="t">14:00</span><span class="d">第3試合（対戦相手との挨拶）</span></li>
+    <li><span class="t">16:00</span><span class="d">終了予定・賞状／賞品の授与（大会本部後ろのオープンスペース）</span></li>
+  </ul>
+
+  <h2>対戦の組合せ</h2>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr><th>試合</th><th>対戦</th><th>コート</th><th>待機場所</th></tr>
+      </thead>
+      <tbody>
+        <tr class="mine"><td class="mark">第1試合</td><td>愛知県 vs 静岡県</td><td>No.7〜12</td><td>愛知＝待機4／静岡＝待機3</td></tr>
+        <tr><td>第1試合</td><td>岐阜県 vs 三重県</td><td>No.1〜6</td><td>岐阜＝待機2／三重＝待機1</td></tr>
+        <tr class="mine"><td class="mark">第2試合</td><td>愛知県 vs 三重県</td><td>No.7〜12</td><td>愛知＝待機4／三重＝待機3</td></tr>
+        <tr><td>第2試合</td><td>岐阜県 vs 静岡県</td><td>No.1〜6</td><td>岐阜＝待機2／静岡＝待機1</td></tr>
+        <tr class="mine"><td class="mark">第3試合</td><td>岐阜県 vs 愛知県</td><td>No.1〜6</td><td>岐阜＝待機2／愛知＝待機1</td></tr>
+        <tr><td>第3試合</td><td>静岡県 vs 三重県</td><td>No.7〜12</td><td>静岡＝待機4／三重＝待機3</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="lead">※ 黄色の行が愛知県の試合です。愛知県の記念撮影は第2試合の挨拶時（No.7コート）に行います。</p>
+
+  <h2>配布資料（全6点）</h2>
+  <div class="cards">
+
+    <div class="card">
+      <span class="tag">PDF・140KB</span>
+      <h3>第17回 合計年齢別シニアテニス東海大会 実施要項</h3>
+      <p>日時・会場・試合方法・チーム編成・参加料・注意事項など、大会の基本事項をまとめた要項です。選手名簿の提出先と振込先も記載されています。</p>
+      <a class="btn" href="https://drive.google.com/file/d/1iEA_lvoNkCABX2HyU7lt_gNRg0vOWqSk/view?usp=sharing" target="_blank" rel="noopener">実施要項を見る</a>
+    </div>
+
+    <div class="card">
+      <span class="tag">PDF・164KB</span>
+      <h3>第17回　監督の皆さんへ</h3>
+      <p>当日のタイムスケジュール、試合方法とルール（代理出場・途中棄権の扱いなど）、試合結果の報告方法、順位の決定方法、記念撮影のタイミングを記載しています。</p>
+      <a class="btn" href="https://drive.google.com/file/d/1XSguAv1nbETC9stehBBv0o8MYrlvaw1k/view?usp=sharing" target="_blank" rel="noopener">監督向け資料を見る</a>
+    </div>
+
+    <div class="card">
+      <span class="tag">PDF・70KB</span>
+      <h3>第17回　大会運営事項</h3>
+      <p>各試合の対戦カードと使用コート、選手団の待機場所、挨拶の時刻とコート、ボールの受け渡し、試合進行のルールをまとめた運営用の資料です。</p>
+      <a class="btn" href="https://drive.google.com/file/d/1z7iHqcRlAIf3RTqhMKzSlCfc3nH4Wb9A/view?usp=sharing" target="_blank" rel="noopener">運営事項を見る</a>
+    </div>
+
+    <div class="card">
+      <span class="tag">PDF・401KB</span>
+      <h3>四日市ドーム 道程</h3>
+      <p>高速道路のインターチェンジからの経路と所要時間（四日市東IC から30分弱、みえ川越IC から20分弱）、駐車場の位置を示した地図です。</p>
+      <a class="btn" href="https://drive.google.com/file/d/1ScRf11tSpVKroxwI9QhoVDGDvr2yhiNm/view?usp=sharing" target="_blank" rel="noopener">道程・駐車場を見る</a>
+    </div>
+
+    <div class="card">
+      <span class="tag">PDF・225KB</span>
+      <h3>四日市ドーム レイアウト</h3>
+      <p>会場の平面図と写真です。コート番号の並び、待機スペース、大会本部の位置の確認にお使いください。</p>
+      <a class="btn" href="https://drive.google.com/file/d/1XaLyBfpL6u8JP9H6yNAs1uZhrsN0u8gk/view?usp=sharing" target="_blank" rel="noopener">会場レイアウトを見る</a>
+    </div>
+
+    <div class="card">
+      <span class="tag">画像・2MB</span>
+      <h3>おにぎり桃太郎（おにぎりボックス）</h3>
+      <p>昼食の参考情報です。事前予約ができるおにぎりボックスの案内を掲載しています。お申し込みについては、下の「<a href="#lunch">昼食について</a>」をご覧ください。</p>
+      <a class="btn sub" href="https://drive.google.com/file/d/15c_fKb1J6wgmiv-tz8YXxVllsdnzjjsF/view?usp=sharing" target="_blank" rel="noopener">昼食の案内を見る</a>
+    </div>
+
+  </div>
+
+  <h2 id="lunch">昼食について</h2>
+
+  <p class="lead" style="margin-top:0">会場の近くにコンビニはありません。当日の昼食は、事前にご用意いただくかご注文をお願いします。</p>
+
+  <!-- 商品の紹介：A・B・Cどの案でも共通で表示します -->
+  <div class="lunch-item">
+    <!-- 画像はGoogleドライブから読み込んでいます。表示を安定させたい場合は、
+         リポジトリに images/onigiri-box.png を置き、src をそちらに差し替えてください。 -->
+    <img src="https://drive.google.com/thumbnail?id=15c_fKb1J6wgmiv-tz8YXxVllsdnzjjsF&sz=w800"
+         alt="おにぎり2個BOX（おにぎり2個とおかずが入った折箱）"
+         loading="lazy" onerror="this.style.display='none'">
+    <div class="lunch-item-body">
+      <h3>おにぎり2個BOX（おにぎりの桃太郎）</h3>
+      <p>四日市市のおにぎり店「おにぎりの桃太郎」のお弁当です。おにぎり2個におかずが付き、おかずは和風・洋風から選べます。</p>
+      <p><a href="https://drive.google.com/file/d/15c_fKb1J6wgmiv-tz8YXxVllsdnzjjsF/view?usp=sharing" target="_blank" rel="noopener">元の案内を大きく見る</a></p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       お申し込みの案内：A・B・C の3案を用意しています。
+       愛知県部会でまとめて注文するかどうかが決まったら、
+       表示したい案を囲んでいるコメント記号を外し、
+       表示しない案はコメントで囲んだままにしてください。
+       （初期状態は「C案：調整中」を表示しています）
+       ============================================================ -->
+
+  <!-- ▼ A案：愛知県部会でまとめて注文する場合（◯の箇所を書き換えてください）
+  <div class="lunch">
+    <p class="lunch-lead">愛知県部会でまとめて注文します。ご希望の方はお申し込みください。</p>
+    <dl class="facts-inline">
+      <div class="row"><dt>お申し込み</dt><dd>◯月◯日（◯）までに ◯◯ までご連絡ください</dd></div>
+      <div class="row"><dt>代金</dt><dd>1個 ◯◯◯円（当日、会場でお支払いください）</dd></div>
+      <div class="row"><dt>お渡し</dt><dd>当日 ◯時ごろ、愛知県の待機スペースでお渡しします</dd></div>
+      <div class="row"><dt>キャンセル</dt><dd>◯月◯日（◯）以降のキャンセルはご遠慮ください</dd></div>
+    </dl>
+    <p>お申し込みのない方は、昼食を各自ご用意のうえお越しください。</p>
+  </div>
+  ▲ A案ここまで -->
+
+  <!-- ▼ B案：まとめての注文はせず、各自でご用意いただく場合
+  <div class="lunch">
+    <p class="lunch-lead">愛知県部会でのまとめての注文は行いません。昼食は各自でご用意ください。</p>
+    <p>上記のおにぎりボックスは、お店に直接ご予約いただけます。ご注文・お支払い・受け取りは各自でお願いします。会場に向かう前にお買い求めいただくのが確実です。</p>
+    <p><a class="btn sub" href="https://onigiri-momotaro.jp/" target="_blank" rel="noopener">おにぎりの桃太郎（公式サイト）</a></p>
+  </div>
+  ▲ B案ここまで -->
+
+  <!-- ▼ C案：調整中（現在表示中） -->
+  <div class="lunch">
+    <p class="lunch-lead">愛知県部会でまとめて注文するかどうかを、現在調整しています。</p>
+    <p>お申し込みの方法・代金・締切が決まりましたら、このページでお知らせします。◯月◯日ごろまでにこのページをもう一度ご確認ください。まとめての注文を行わない場合は、各自でのご用意をお願いすることになります。</p>
+  </div>
+  <!-- ▲ C案ここまで -->
+
+  <h2>当日の持ち物・ご注意</h2>
+  <div class="note">
+    <h3>ご参加前にご確認ください</h3>
+    <ul>
+      <li><strong>健康保険証</strong>をご持参ください。常備薬のある方はメモの携帯をお願いします。</li>
+      <li><strong>昼食のご用意をお忘れなく。</strong>会場の近くにコンビニはありません（詳しくは「<a href="#lunch">昼食について</a>」）。</li>
+      <li>会場内にシャワー室があります（お湯：5分／100円）。</li>
+      <li>参加者は、本大会への参加によって生じた損失・損害および事故について、一切の請求権を放棄することに同意したものとします（主催者は応急手当を行いますが、その後の責任は負いません）。</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>このページは配布資料へのご案内です。内容の詳細は各PDFをご確認ください。<br>
+    日本シニアテニス連盟 愛知県部会</p>
+    <p>最終更新：2026年9月9日</p>
+  </footer>
+
+</div>
+</body>
+</html>
