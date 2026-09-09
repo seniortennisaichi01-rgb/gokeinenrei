@@ -119,6 +119,16 @@
   tbody tr.mine td{background:#fffbe9;}
   .mark{font-weight:700;}
 
+  /* 地図リンク */
+  .maplink{
+    display:inline-flex;align-items:center;gap:6px;
+    margin-top:8px;padding:8px 14px;min-height:44px;box-sizing:border-box;
+    background:var(--accent-bg);border:1px solid var(--green);border-radius:8px;
+    color:var(--green-dark);font-weight:700;text-decoration:none;font-size:15.5px;
+  }
+  .maplink:hover{background:var(--green);color:#fff;}
+  .maplink svg{width:18px;height:18px;fill:currentColor;flex:0 0 18px;}
+
   /* 昼食セクション */
   .lunch{
     background:var(--card);border:1px solid var(--line);border-radius:12px;
@@ -192,7 +202,10 @@
   <div class="facts">
     <dl>
       <div class="row"><dt>日時</dt><dd>2026年10月1日（木）　練習 9:20〜9:45 ／ 監督会議 9:30 ／ 試合開始 10:00 ／ 終了 16:00 予定</dd></div>
-      <div class="row"><dt>会場</dt><dd>四日市ドーム（砂入り人工芝・屋内12面）<br>三重県四日市市大字羽津甲5169　TEL 059-330-3131</dd></div>
+      <div class="row"><dt>会場</dt><dd>四日市ドーム（砂入り人工芝・屋内12面）<br>三重県四日市市大字羽津甲5169　TEL 059-330-3131<br>
+        <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%9B%9B%E6%97%A5%E5%B8%82%E3%83%89%E3%83%BC%E3%83%A0%20%E4%B8%89%E9%87%8D%E7%9C%8C%E5%9B%9B%E6%97%A5%E5%B8%82%E5%B8%82%E5%A4%A7%E5%AD%97%E7%BE%BD%E6%B4%A5%E7%94%B25169" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c-3.9 0-7 3.1-7 7 0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+          Googleマップで開く</a></dd></div>
       <div class="row"><dt>主催・主管</dt><dd>日本シニアテニス連盟・東海地区三重県部会（後援：東海地区各県部会）</dd></div>
       <div class="row"><dt>試合方法</dt><dd>4県対抗団体戦（ラウンドロビン方式）／全試合6ゲーム先取・ノーアドバンテージ・セルフジャッジ</dd></div>
       <div class="row"><dt>チーム編成</dt><dd>男子ダブルス 120・135・145・155歳以上／女子ダブルス 100・125・135・145歳以上（各種目 No.1・No.2）<br>※年齢は本年12月31日現在</dd></div>
@@ -328,7 +341,7 @@
   <!-- ▼ C案：調整中（現在表示中） -->
   <div class="lunch">
     <p class="lunch-lead">愛知県部会でまとめて注文するかどうかを、現在調整しています。</p>
-    <p>お申し込みの方法・代金・締切が決まりましたら、このページでお知らせします。9月25日ごろまでにこのページをもう一度ご確認ください。まとめての注文を行わない場合は、各自でのご用意をお願いすることになります。</p>
+    <p>お申し込みの方法・代金・締切が決まりましたら、このページでお知らせします。◯月◯日ごろまでにこのページをもう一度ご確認ください。まとめての注文を行わない場合は、各自でのご用意をお願いすることになります。</p>
   </div>
   <!-- ▲ C案ここまで -->
 
